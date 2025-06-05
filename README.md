@@ -68,7 +68,7 @@ df['description'] = df['description'].str.lower()
 print(df['description'].unique())
 
 
-#  Convert date formats to a consistent type (e.g., dd-mm-yyyy)
+#  Converted date formats to a consistent type (e.g., dd-mm-yyyy)
 
 df['date_added']=pd.to_datetime(df['date_added'], errors = 'coerce')
 df['date_added']= df['date_added'].dt.strftime('%d-%m-%Y')
