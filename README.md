@@ -26,7 +26,7 @@ df['duration'].fillna('Unknown', inplace=True)
 print(df.isnull().sum())
 
 
-# Check Duplicate
+# Checked Duplicate
 print(df.duplicated(). sum())
 print(df['show_id'].duplicated().sum())
 
@@ -81,12 +81,12 @@ df['date_added'].fillna(df['date_added'].mode()[0],inplace=True)
 print(df.isnull().sum())
 
 
-# Rename column headers to be clean and uniform (e.g., lowercase, no spaces).
+# Renamed column headers to be clean and uniform with (lowercase, no spaces).
 
 df.columns = df.columns.str.lower().str.replace(' ','-')
 print(df.columns)
 
 
- # Check and fix data types (e.g., age should be int, date as datetime).
+ # Checked and fix data types (e.g., age should be int, date as datetime).
 
 print(df.dtypes)
